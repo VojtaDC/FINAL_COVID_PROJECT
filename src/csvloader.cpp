@@ -7,12 +7,10 @@
 #include <iostream> // Added for std::cout and std::endl
 
 std::vector<std::unique_ptr<Person>> CsvLoader::loadPersons(const std::string& filepath, const std::string& doctor_or_patient) {
-    std::cout << "[CsvLoader] Loading file: " << filepath << std::endl;
 	std::vector<std::unique_ptr<Person>> people;
 	std::ifstream file_stream_read;
 	file_stream_read.open(filepath);
 	std::string line;
-	std::cout << "Line " << line << std::endl;
 	if (file_stream_read.is_open()) {
 		std::getline(file_stream_read, line); //This puts the header of the csv file in line so it is skipped
 		while (std::getline(file_stream_read, line)) {

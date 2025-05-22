@@ -8,16 +8,11 @@
 LoginScreen::LoginScreen(QWidget *parent) : QDialog(parent) {
 	ui.setupUi(this);
 
-    // Bepaal exe-dir en navigeer naar ../data
     QDir exeDir(QCoreApplication::applicationDirPath()); 
-    exeDir.cdUp();             // nu in .../build/..
-    exeDir.cd("data");         // nu in .../data
+    exeDir.cdUp();             
+    exeDir.cd("data");
     QString patientFile = exeDir.filePath("patient.csv");
     QString doctorFile  = exeDir.filePath("doctor.csv");
-
-    qDebug() << "Data-dir:" << exeDir.path();
-    qDebug() << "Patient-file:" << patientFile;
-    qDebug() << "Doctor-file:"  << doctorFile;
 
     patients = CsvLoader::loadPersons(patientFile.toStdString(), "patient");
     doctors  = CsvLoader::loadPersons(doctorFile.toStdString(),  "doctor");
