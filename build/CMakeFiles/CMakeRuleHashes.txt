@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+9b86c9af7a992938e093c319143fc61f CMakeFiles/CovidProject_autogen
+f842d6139c7736d4597f709b9344d77c CovidProject_autogen/3YJK5W5UP7/qrc_mainwindow.cpp

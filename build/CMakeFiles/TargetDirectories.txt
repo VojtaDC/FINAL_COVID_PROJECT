@@ -1,0 +1,4 @@
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/CovidProject.dir
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/edit_cache.dir
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/rebuild_cache.dir
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/CovidProject_autogen.dir

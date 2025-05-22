@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/CovidProject_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/CovidProject_autogen.dir/ParseCache.txt"
+  "CovidProject_autogen"
+  "CMakeFiles/CovidProject.dir/CovidProject_autogen/3YJK5W5UP7/qrc_mainwindow.cpp.o"
+  "CMakeFiles/CovidProject.dir/CovidProject_autogen/3YJK5W5UP7/qrc_mainwindow.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/addpatient.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/addpatient.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/csvloader.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/csvloader.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/doctor.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/doctor.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/loginscreen.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/loginscreen.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/main.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/main.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/mainwindow.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/mainwindow.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/patient.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/patient.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/patientlist.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/patientlist.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/person.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/person.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/regex_validation.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/regex_validation.cpp.o.d"
+  "CovidProject"
+  "CovidProject.pdb"
+  "CovidProject_autogen/3YJK5W5UP7/qrc_mainwindow.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/CovidProject.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
