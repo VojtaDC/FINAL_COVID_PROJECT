@@ -152,7 +152,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[

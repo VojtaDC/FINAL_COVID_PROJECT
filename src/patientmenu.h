@@ -11,6 +11,9 @@ public:
 	//~PatientMenu();
 	
 private slots:
+	void on_signoffButton_clicked();
+
+
 private:
 	Ui::PatientMenu ui;
 };

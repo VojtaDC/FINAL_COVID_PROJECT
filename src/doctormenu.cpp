@@ -1,5 +1,6 @@
 #include "doctormenu.h"
 #include "addpatient.h"
+#include "sessionutils.h" 
 
 DoctorMenu::DoctorMenu(QWidget *parent) : QMainWindow(parent) {
 	ui.setupUi(this);
@@ -17,6 +18,8 @@ void DoctorMenu::on_addpatientButton_clicked() {
 	addpatient.exec();
 }
 void DoctorMenu::on_signoffButton_clicked() {
+	sessionutils::performSignOff(this);
+
 
 }
 

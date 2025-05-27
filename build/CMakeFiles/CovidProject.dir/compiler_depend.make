@@ -966,9 +966,11 @@ CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o: CovidPr
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/addpatient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/data_types.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/mainwindow.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientlist.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientmenu.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
@@ -3658,6 +3660,7 @@ CMakeFiles/CovidProject.dir/src/csvloader.cpp.o: /Users/vojtadeconinck/Library/C
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits \
@@ -3834,7 +3837,6 @@ CMakeFiles/CovidProject.dir/src/csvloader.cpp.o: /Users/vojtadeconinck/Library/C
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/Person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
@@ -4711,8 +4713,8 @@ CMakeFiles/CovidProject.dir/src/doctor.cpp.o: /Users/vojtadeconinck/Library/Clou
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/Person.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h
 
 CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o: /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
@@ -5675,12 +5677,18 @@ CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o: /Users/vojtadeconinck/Library/
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/addpatient.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/data_types.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/regex_validation.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/sessionutils.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_addpatient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_doctormenu.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_loginscreen.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QEvent \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QList \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QMargins \
@@ -6010,6 +6018,7 @@ CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o: /Users/vojtadeconinck/Library/
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QMenuBar \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QRadioButton \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QScrollerProperties \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QSpacerItem \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QStatusBar \
@@ -7108,13 +7117,17 @@ CMakeFiles/CovidProject.dir/src/loginscreen.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientmenu.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_doctormenu.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_patientmenu.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDebug \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDir \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QEvent \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QList \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QMargins \
@@ -8543,8 +8556,10 @@ CMakeFiles/CovidProject.dir/src/main.cpp.o: /Users/vojtadeconinck/Library/CloudS
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/mainwindow.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_mainwindow.h \
@@ -10855,8 +10870,8 @@ CMakeFiles/CovidProject.dir/src/patient.cpp.o: /Users/vojtadeconinck/Library/Clo
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/Person.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h
 
 CMakeFiles/CovidProject.dir/src/patientlist.cpp.o: /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientlist.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
@@ -11899,6 +11914,11 @@ CMakeFiles/CovidProject.dir/src/patientlist.cpp.o: /Users/vojtadeconinck/Library
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
 
 CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientmenu.cpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -12402,10 +12422,43 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/cauchy_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/chi_squared_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/clamp_to_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/default_random_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/discard_block_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/discrete_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/exponential_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/fisher_f_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/gamma_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/generate_canonical.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/geometric_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/independent_bits_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/is_seed_sequence.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/is_valid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/knuth_b.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/linear_congruential_engine.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/log2.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/lognormal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/mersenne_twister_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/negative_binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/normal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/piecewise_constant_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/piecewise_linear_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/poisson_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/random_device.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/ranlux.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/seed_seq.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/subtract_with_carry_engine.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h \
@@ -12428,8 +12481,11 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/error_code.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/error_condition.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__system_error/system_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/id.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__threading_support \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h \
@@ -12607,6 +12663,7 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bit \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cerrno \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/chrono \
@@ -12629,9 +12686,12 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/execution \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/future \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits.h \
@@ -12645,7 +12705,10 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/new \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h \
@@ -12656,6 +12719,7 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/typeinfo \
@@ -12675,6 +12739,7 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/i386/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/i386/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/i386/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/limits.h \
@@ -12692,6 +12757,7 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/nl_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/os/availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/pthread_impl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/qos.h \
@@ -12794,6 +12860,7 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_string.h \
@@ -12801,130 +12868,486 @@ CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o: /Users/vojtadeconinck/Library
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wctype.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/inttypes.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientmenu.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/sessionutils.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_patientmenu.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QEvent \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QList \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QMargins \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QMetaType \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QObject \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QPointF \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QRect \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QScopedPointer \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QSharedDataPointer \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QSize \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QSizeF \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QStringList \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QVariant \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QtCore \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QtCoreDepends \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstractanimation.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstractnativeeventfilter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstractproxymodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstractstate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qabstracttransition.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qalgorithms.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qanimationgroup.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qarraydata.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qarraydataops.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qarraydatapointer.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qatomic.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qatomic_cxx11.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbasicatomic.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbasictimer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbitarray.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbuffer.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbytearray.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qbytearraymatcher.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcache.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcborarray.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcborcommon.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcbormap.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcborstream.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcborvalue.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qchar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcollator.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcommandlineoption.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcommandlineparser.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcompilerdetection.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qconfig.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcontainerfwd.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcontiguouscache.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcoreapplication.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcoreevent.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qcryptographichash.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdatastream.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdatetime.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdeadlinetimer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdebug.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdir.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qdiriterator.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qeasingcurve.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qelapsedtimer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qendian.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qeventloop.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qeventtransition.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qexception.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfactoryinterface.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfile.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfiledevice.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfileinfo.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfileselector.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfilesystemwatcher.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfinalstate.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qflags.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfloat16.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfuture.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfutureinterface.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfuturesynchronizer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qfuturewatcher.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qgenericatomic.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qglobal.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qglobalstatic.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qhash.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qhistorystate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qidentityproxymodel.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qiodevice.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qisenum.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qitemselectionmodel.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qiterator.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qjsonarray.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qjsondocument.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qjsonobject.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qjsonvalue.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlibrary.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlibraryinfo.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qline.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlinkedlist.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlist.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlockfile.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qlogging.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qloggingcategory.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmap.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmargins.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmath.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmessageauthenticationcode.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmetaobject.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmetatype.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmimedata.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmimedatabase.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmimetype.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qmutex.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qnamespace.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qobject.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qobject_impl.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qobjectcleanuphandler.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qobjectdefs.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qoperatingsystemversion.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpair.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qparallelanimationgroup.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpauseanimation.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qplugin.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpluginloader.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpoint.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpointer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qprocess.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qprocessordetection.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qpropertyanimation.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qqueue.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qrandom.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qreadwritelock.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qrect.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qrefcount.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qregexp.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qregularexpression.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qresource.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qresultstore.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qrunnable.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsavefile.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qscopedvaluerollback.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qscopeguard.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsemaphore.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsequentialanimationgroup.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qset.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsettings.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qshareddata.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsharedmemory.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsharedpointer.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsignalmapper.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsignaltransition.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsize.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsocketnotifier.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstack.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstandardpaths.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstatemachine.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstorageinfo.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstring.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringalgorithms.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringbuilder.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringlistmodel.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringliteral.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringmatcher.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qstringview.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsysinfo.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsystemdetection.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qsystemsemaphore.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtcore-config.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtcoreversion.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtemporarydir.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtemporaryfile.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtextboundaryfinder.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtextcodec.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtextstream.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qthread.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qthreadpool.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qthreadstorage.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtimeline.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtimezone.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtranslator.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtypeinfo.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qtypetraits.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qurl.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qurlquery.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/quuid.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qvariant.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qvariantanimation.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qvector.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qversionnumber.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qversiontagging.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qwaitcondition.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qwineventnotifier.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qxmlstream.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QImage \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QMatrix3x3 \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QMatrix4x4 \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QOpenGLContext \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QPaintDevice \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QPaintDeviceWindow \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QSurfaceFormat \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QTransform \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QVector3D \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QWindow \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QtGui \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/QtGuiDepends \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qabstracttextdocumentlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qaccessible.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qaccessiblebridge.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qaccessibleobject.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qaccessibleplugin.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qbackingstore.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qbitmap.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qbrush.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qclipboard.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qcolor.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qcursor.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qdesktopservices.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qdrag.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qevent.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qfont.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qfontdatabase.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qfontinfo.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qfontmetrics.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qgenericmatrix.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qgenericplugin.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qgenericpluginfactory.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qglyphrun.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qicon.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qiconengine.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qiconengineplugin.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qimage.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qimageiohandler.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qimagereader.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qimagewriter.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qinputmethod.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qkeysequence.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qmatrix.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qmatrix4x4.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qmovie.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qoffscreensurface.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopengl.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglbuffer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglcontext.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopengldebug.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglextrafunctions.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglframebufferobject.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglfunctions.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglpaintdevice.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglpixeltransferoptions.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglshaderprogram.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopengltexture.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopengltextureblitter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopengltimerquery.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglversionfunctions.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglvertexarrayobject.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qopenglwindow.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpagedpaintdevice.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpagelayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpagesize.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpaintdevicewindow.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpaintengine.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpainter.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpainterpath.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpalette.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpdfwriter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpen.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpicture.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpictureformatplugin.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpixelformat.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpixmap.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpixmapcache.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qpolygon.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qquaternion.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qrasterwindow.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qrawfont.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qregion.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qrgb.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qrgba64.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qscreen.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qsessionmanager.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qstatictext.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qstylehints.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qsurface.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qsurfaceformat.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qsyntaxhighlighter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextcursor.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextdocument.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextdocumentfragment.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextdocumentwriter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextformat.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextlist.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextobject.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextoption.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtexttable.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtgui-config.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtguiversion.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtouchdevice.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtransform.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qvalidator.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qvector2d.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qvector3d.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qvector4d.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qwindow.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qwindowdefs.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QApplication \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QCommonStyle \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QDialog \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QGridLayout \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLabel \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLayout \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QMenuBar \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QRadioButton \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QScrollerProperties \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QSpacerItem \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QStatusBar \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QWidget \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QtWidgets \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QtWidgetsDepends \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qaccessiblewidget.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qaction.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qactiongroup.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qapplication.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qbuttongroup.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcalendarwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcheckbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcolordialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcolormap.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcolumnview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcommandlinkbutton.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcommonstyle.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qcompleter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdatawidgetmapper.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdatetimeedit.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdesktopwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdial.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdirmodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdockwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qdrawutil.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qerrormessage.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfiledialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfileiconprovider.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfilesystemmodel.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfocusframe.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfontcombobox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qfontdialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qformlayout.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qframe.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgesture.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgesturerecognizer.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsanchorlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicseffect.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsgridlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsitemanimation.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicslayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicslayoutitem.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicslinearlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsproxywidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicssceneevent.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicstransform.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicswidget.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgroupbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qheaderview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qinputdialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qitemdelegate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qitemeditorfactory.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qkeyeventtransition.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qkeysequenceedit.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlabel.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlayout.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlcdnumber.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlistview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qlistwidget.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmdiarea.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmdisubwindow.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmenubar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qmouseeventtransition.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qopenglwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qplaintextedit.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qprogressbar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qprogressdialog.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qproxystyle.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qradiobutton.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qrubberband.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qscrollarea.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qscrollbar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qscroller.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qscrollerproperties.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qshortcut.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qsizegrip.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qsizepolicy.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qslider.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qspinbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qsplashscreen.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qsplitter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstackedlayout.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstackedwidget.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstatusbar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstyle.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstylefactory.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstylepainter.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qstyleplugin.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qsystemtrayicon.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtableview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtablewidget.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtextbrowser.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtextedit.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtoolbar.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtoolbox.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtoolbutton.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtooltip.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtreeview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtreewidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtreewidgetitemiterator.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
-  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qtwidgetsversion.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qundogroup.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qundostack.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qundoview.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwhatsthis.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwidget.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwidgetaction.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qwizard.h
 
 CMakeFiles/CovidProject.dir/src/person.cpp.o: /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
@@ -14636,9 +15059,9 @@ CMakeFiles/CovidProject.dir/src/regex_validation.cpp.o: /Users/vojtadeconinck/Li
 
 /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientlist.cpp:
 
-/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.cpp:
+/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDir:
 
-/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h:
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctormenu.cpp:
 
 /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDebug:
 
@@ -15209,6 +15632,8 @@ CovidProject_autogen/UVLADIE3JM/moc_doctormenu.cpp:
 /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h:
 
 /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patientlist.h:
+
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h:
 
 /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/qhash.h:
 
@@ -16780,8 +17205,6 @@ CovidProject_autogen/UVLADIE3JM/moc_mainwindow.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
 
-/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/Person.h:
-
 /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtGui.framework/Headers/qtextoption.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wctype.h:
@@ -17603,6 +18026,8 @@ CovidProject_autogen/mocs_compilation.cpp:
 /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/qgraphicsitemanimation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl3.h:
+
+/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/sessionutils.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 

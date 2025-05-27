@@ -1437,6 +1437,8 @@ CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o: \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/loginscreen.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/ui_loginscreen.h \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QRadioButton \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/doctor.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/csvloader.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/moc_mainwindow.cpp \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/UVLADIE3JM/../../../src/mainwindow.h \

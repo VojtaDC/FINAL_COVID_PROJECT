@@ -1430,4 +1430,6 @@ CMakeFiles/CovidProject.dir/src/main.cpp.o: \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QSpacerItem \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h

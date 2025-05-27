@@ -1430,4 +1430,11 @@ CMakeFiles/CovidProject.dir/src/doctormenu.cpp.o: \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/regex_validation.h \
-  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/data_types.h
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/data_types.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/sessionutils.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/loginscreen.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/ui_loginscreen.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QRadioButton \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/doctor.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/csvloader.h
