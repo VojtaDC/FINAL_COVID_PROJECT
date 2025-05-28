@@ -10,29 +10,14 @@ LoginScreen::LoginScreen(QWidget *parent) : QDialog(parent) {
     QDir exeDir(QCoreApplication::applicationDirPath()); 
     exeDir.cdUp();             
     exeDir.cd("data");
-    QString patientFile = exeDir.filePath("patient.csv");
-    QString doctorFile  = exeDir.filePath("doctor.csv");
+    QString personsFile = exeDir.filePath("persons.csv");
 
-    // Laad de patiënten met de nieuwe template-gebaseerde methode
-    patients = CsvLoader::load<Patient>(
-        patientFile.toStdString(),
-        [](auto &cols) -> std::unique_ptr<Patient> {
-            if (cols.size() < 7) return nullptr;
-            bool isPos = (cols[5] == "true");
-            return std::make_unique<Patient>(
-                cols[0], cols[1], cols[2], cols[3], cols[4], isPos, cols[6]);
-        }
-    );
-
-    // Laad de dokters met de nieuwe template-gebaseerde methode
-    doctors = CsvLoader::load<Doctor>(
-        doctorFile.toStdString(),
-        [](auto &cols) -> std::unique_ptr<Doctor> {
-            if (cols.size() < 6) return nullptr;
-            return std::make_unique<Doctor>(
-                cols[0], cols[1], cols[2], cols[3], cols[4], cols[5]);
-        }
-    );
+    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
+    auto allPersons = CsvLoader::loadAllPersons(personsFile.toStdString());
+    
+    // Filter patients en doctors uit de gecombineerde lijst
+    patients = CsvLoader::filterPatients(allPersons);
+    doctors = CsvLoader::filterDoctors(allPersons);
 }
 
 void LoginScreen::on_loginButton_clicked() {

@@ -7,15 +7,18 @@
 #include <string>
 #include "person.h"
 
+// Forward declarations
+class Doctor;
+class Patient;
+
 class CsvLoader {
 public:
-    // Legacy method - can be kept for backwards compatibility
-    static std::vector<std::unique_ptr<Person>> loadPersons(const std::string& filepath, const std::string& doctor_or_patient);
     
-    // New template-based method
-    template<typename T>
-    static std::vector<std::unique_ptr<T>> load(
-        const std::string &filepath,
-        std::function<std::unique_ptr<T>(const std::vector<std::string>&)> factory);
-        
+    // New type-based methods
+    static std::vector<std::unique_ptr<Person>> loadAllPersons(const std::string& filepath);
+    static std::vector<std::unique_ptr<Doctor>> filterDoctors(const std::vector<std::unique_ptr<Person>>& persons);
+    static std::vector<std::unique_ptr<Patient>> filterPatients(const std::vector<std::unique_ptr<Person>>& persons);
+    
+private:
+    static std::unique_ptr<Person> createPersonFromData(const std::vector<std::string>& data);
 };

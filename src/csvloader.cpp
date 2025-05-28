@@ -7,75 +7,103 @@
 #include <iostream>
 #include <functional>
 
-// Legacy method implementation (maintained for backward compatibility)
-std::vector<std::unique_ptr<Person>> CsvLoader::loadPersons(const std::string& filepath, const std::string& doctor_or_patient) {
-	std::vector<std::unique_ptr<Person>> people;
-	std::ifstream file_stream_read;
-	file_stream_read.open(filepath);
-	std::string line;
-	if (file_stream_read.is_open()) {
-		std::getline(file_stream_read, line); //This puts the header of the csv file in line so it is skipped
-		while (std::getline(file_stream_read, line)) {
-			std::stringstream line_read(line);
-			std::vector<std::string> parameters;
 
-			std::string parameter;
-			while (std::getline(line_read, parameter, ';')) {
-				parameters.push_back(parameter);
-			}
-			if (doctor_or_patient == "doctor") {
-				//Doctor CSV structure: name,surname,password,phoneNumber,email,speciliazisiton
-				people.push_back(std::make_unique<Doctor>(parameters[0], parameters[1], parameters[2], parameters[3], parameters[4], parameters[5]));
-			}
-
-			else if (doctor_or_patient == "patient") {
-				//Patient CSV structure: name,surname,password,phoneNumber,email,positive,last_test_date
-				bool isPositive = (parameters[5] == "true"); //Van string naar bool
-				people.push_back(std::make_unique<Patient>(parameters[0], parameters[1], parameters[2], parameters[3], parameters[4], isPositive, parameters[6]));
-			}
-
-			else {
-				std::cerr << "[CsvLoader] Ongeldig type: " << doctor_or_patient << "\n";
-			}
-		}
-	}
-	else {
-		std::cerr << "[CsvLoader] Kan bestand niet openen: " << filepath << "\n";
-	}
-	return people;
-}
-
-// New template-based implementation
-template<typename T>
-std::vector<std::unique_ptr<T>> CsvLoader::load(
-    const std::string &filepath,
-    std::function<std::unique_ptr<T>(const std::vector<std::string>&)> factory)
-{
-    std::vector<std::unique_ptr<T>> result;
+// New type-based implementation
+std::vector<std::unique_ptr<Person>> CsvLoader::loadAllPersons(const std::string& filepath) {
+    std::vector<std::unique_ptr<Person>> persons;
     std::ifstream file(filepath);
+    
     if (!file.is_open()) {
         std::cerr << "[CsvLoader] Kan bestand niet openen: " << filepath << "\n";
-        return result;
+        return persons;
     }
-
+    
     std::string line;
-    std::getline(file, line);  // header overslaan
-
+    std::getline(file, line); // Skip header
+    
     while (std::getline(file, line)) {
         std::stringstream ss(line);
-        std::vector<std::string> cols;
+        std::vector<std::string> fields;
         std::string field;
-        while (std::getline(ss, field, ';'))
-            cols.push_back(field);
-        // Vraag de factory om het juiste object (Doctor of Patient) te maken
-        if (auto obj = factory(cols))
-            result.push_back(std::move(obj));
+        
+        while (std::getline(ss, field, ';')) { // Using semicolon separator
+            fields.push_back(field);
+        }
+        
+        if (auto person = createPersonFromData(fields)) {
+            persons.push_back(std::move(person));
+        }
     }
-    return result;
+    
+    return persons;
 }
 
-// De template definities moeten expliciet worden geïnstantieerd
-template std::vector<std::unique_ptr<Doctor>> CsvLoader::load<Doctor>(
-    const std::string&, std::function<std::unique_ptr<Doctor>(const std::vector<std::string>&)>);
-template std::vector<std::unique_ptr<Patient>> CsvLoader::load<Patient>(
-    const std::string&, std::function<std::unique_ptr<Patient>(const std::vector<std::string>&)>);
+std::unique_ptr<Person> CsvLoader::createPersonFromData(const std::vector<std::string>& data) {
+    if (data.size() < 6) {
+        std::cerr << "[CsvLoader] Onvoldoende data in rij\n";
+        return nullptr;
+    }
+    
+    const std::string& type = data[0];
+    
+    if (type == "Doctor") {
+        if (data.size() < 7) return nullptr;
+        // type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date
+        return std::make_unique<Doctor>(
+            data[1], data[2], data[3], data[4], data[5], data[6]
+        );
+    }
+    else if (type == "Patient") {
+        if (data.size() < 9) return nullptr;
+        // type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date
+        bool isPositive = (data[7] == "true");
+        return std::make_unique<Patient>(
+            data[1], data[2], data[3], data[4], data[5], isPositive, data[8]
+        );
+    }
+    else {
+        std::cerr << "[CsvLoader] Onbekend type: " << type << "\n";
+        return nullptr;
+    }
+}
+
+std::vector<std::unique_ptr<Doctor>> CsvLoader::filterDoctors(const std::vector<std::unique_ptr<Person>>& persons) {
+    std::vector<std::unique_ptr<Doctor>> doctors;
+    
+    for (const auto& person : persons) {
+        if (Doctor* doctor = dynamic_cast<Doctor*>(person.get())) {
+            // Create a copy of the doctor
+            doctors.push_back(std::make_unique<Doctor>(
+                doctor->getName(),
+                doctor->getSurname(),
+                doctor->getPassword(),
+                doctor->getPhoneNumber(),
+                doctor->getEmail(),
+                doctor->getSpecialization()
+            ));
+        }
+    }
+    
+    return doctors;
+}
+
+std::vector<std::unique_ptr<Patient>> CsvLoader::filterPatients(const std::vector<std::unique_ptr<Person>>& persons) {
+    std::vector<std::unique_ptr<Patient>> patients;
+    
+    for (const auto& person : persons) {
+        if (Patient* patient = dynamic_cast<Patient*>(person.get())) {
+            // Create a copy of the patient
+            patients.push_back(std::make_unique<Patient>(
+                patient->getName(),
+                patient->getSurname(),
+                patient->getPassword(),
+                patient->getPhoneNumber(),
+                patient->getEmail(),
+                patient->getPositive(),
+                patient->getLastTestDate()
+            ));
+        }
+    }
+    
+    return patients;
+}

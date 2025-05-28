@@ -1,0 +1,87 @@
+Ben/.DS_Store
+Ben/Tabel_Project/patientfiltermodel.cpp
+Ben/Tabel_Project 2/patientdetails.cpp
+Ben/Tabel_Project 2/patientdetails.h
+Ben/Tabel_Project 2/patientdetails.ui
+Ben/Tabel_Project 2/patientfilltermodel.h
+Ben/Tabel_Project 2/patientfiltermodel.cpp
+Ben/Tabel_Project 2/patientlist.cpp
+Ben/Tabel_Project 2/patientlist.h
+Ben/Tabel_Project 2/patientlist.ui
+Ben/Tabel_Project 2/patientmenu.cpp
+Ben/Tabel_Project 2/patientmenu.h
+build/.DS_Store
+build/build.ninja
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/compile_commands.json
+build/CovidProject
+build/.cmake/api/v1/reply/cache-v2-875c276a4d865d7c862b.json
+build/.cmake/api/v1/reply/cache-v2-c974a50f2d044da9bd7f.json
+build/.cmake/api/v1/reply/cmakeFiles-v1-0b68ff721c8d4c8c98bc.json
+build/.cmake/api/v1/reply/cmakeFiles-v1-2bec187e0041eb0223f7.json
+build/.cmake/api/v1/reply/codemodel-v2-11f89c07f252817eaa64.json
+build/.cmake/api/v1/reply/codemodel-v2-cc7832d5a4c153001e71.json
+build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json
+build/.cmake/api/v1/reply/directory-.-f5ebdc15457944623624.json
+build/.cmake/api/v1/reply/index-2025-05-26T16-07-54-0916.json
+build/.cmake/api/v1/reply/index-2025-05-28T14-34-03-0612.json
+build/.cmake/api/v1/reply/target-CovidProject_autogen-bcfd2655ebf68918e597.json
+build/.cmake/api/v1/reply/target-CovidProject_autogen-Debug-bcfd2655ebf68918e597.json
+build/.cmake/api/v1/reply/target-CovidProject-4f4cdc0d380d8f337194.json
+build/.cmake/api/v1/reply/target-CovidProject-Debug-f4ac235d847e460236b3.json
+build/CMakeFiles/.DS_Store
+build/CMakeFiles/clean_additional.cmake
+build/CMakeFiles/CMakeConfigureLog.yaml
+build/CMakeFiles/CMakeDirectoryInformation.cmake
+build/CMakeFiles/CMakeRuleHashes.txt
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/rules.ninja
+build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake
+build/CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o
+build/CMakeFiles/CovidProject.dir/src/csvloader.cpp.o
+build/CMakeFiles/CovidProject.dir/src/doctor.cpp.o
+build/CMakeFiles/CovidProject.dir/src/loginscreen.cpp.o
+build/CMakeFiles/CovidProject.dir/src/main.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patient.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patientlist.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patientlist.cpp.o.d
+build/CMakeFiles/CovidProject.dir/src/person.cpp.o
+build/CMakeFiles/CovidProject_autogen.dir/AutogenInfo.json
+build/CMakeFiles/CovidProject_autogen.dir/AutogenUsed.txt
+build/CMakeFiles/CovidProject_autogen.dir/AutoRcc_mainwindow_3YJK5W5UP7_Info.json
+build/CMakeFiles/CovidProject_autogen.dir/ParseCache.txt
+build/CovidProject_autogen/moc_predefs.h
+Ben/.DS_Store
+Ben/Tabel_Project/patientfiltermodel.cpp
+build/.DS_Store
+build/build.ninja
+build/cmake_install.cmake
+build/CMakeCache.txt
+build/compile_commands.json
+build/.cmake/api/v1/reply/cache-v2-c974a50f2d044da9bd7f.json
+build/.cmake/api/v1/reply/cmakeFiles-v1-0b68ff721c8d4c8c98bc.json
+build/.cmake/api/v1/reply/codemodel-v2-cc7832d5a4c153001e71.json
+build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json
+build/.cmake/api/v1/reply/index-2025-05-26T16-07-54-0916.json
+build/.cmake/api/v1/reply/target-CovidProject_autogen-Debug-bcfd2655ebf68918e597.json
+build/.cmake/api/v1/reply/target-CovidProject-Debug-f4ac235d847e460236b3.json
+build/CMakeFiles/.DS_Store
+build/CMakeFiles/clean_additional.cmake
+build/CMakeFiles/CMakeConfigureLog.yaml
+build/CMakeFiles/rules.ninja
+build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake
+build/CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o
+build/CMakeFiles/CovidProject.dir/src/csvloader.cpp.o
+build/CMakeFiles/CovidProject.dir/src/doctor.cpp.o
+build/CMakeFiles/CovidProject.dir/src/loginscreen.cpp.o
+build/CMakeFiles/CovidProject.dir/src/main.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patient.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patientlist.cpp.o
+build/CMakeFiles/CovidProject.dir/src/patientlist.cpp.o.d
+build/CMakeFiles/CovidProject.dir/src/person.cpp.o
+build/CMakeFiles/CovidProject_autogen.dir/AutogenInfo.json
+build/CMakeFiles/CovidProject_autogen.dir/AutogenUsed.txt
+build/CMakeFiles/CovidProject_autogen.dir/AutoRcc_mainwindow_3YJK5W5UP7_Info.json
+build/CMakeFiles/CovidProject_autogen.dir/ParseCache.txt
+build/CovidProject_autogen/moc_predefs.h

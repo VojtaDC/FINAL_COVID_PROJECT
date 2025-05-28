@@ -2,6 +2,7 @@
 
 #include "ui_patientlist.h"
 #include "person.h"
+#include "patient.h"
 
 class PatientList : public QMainWindow
 {

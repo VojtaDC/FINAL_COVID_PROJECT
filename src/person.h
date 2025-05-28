@@ -13,6 +13,7 @@ protected:      // Only accessible in this class and derived classes
 
 public:
 	Person(const std::string& name, const std::string& surname, const std::string& password, const std::string& phoneNumber, const std::string& email);
+	virtual ~Person() = default;  // Make Person polymorphic
 	std::string getName() const;
 	std::string getSurname() const;
 	std::string getPassword() const;
