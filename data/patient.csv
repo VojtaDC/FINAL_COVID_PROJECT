@@ -1,2 +1,2 @@
-name;surname;password;phoneNumber;email;positive;last_test_date
-Ben;Aerts;1234;012345678;ben.aerts@hotmail.com;false;N/A
+type;name;surname;password;phoneNumber;email;positive;last_test_date
+Patient;Ben;Aerts;1234;012345678;ben.aerts@hotmail.com;false;N/A

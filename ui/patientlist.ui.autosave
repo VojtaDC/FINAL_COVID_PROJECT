@@ -23,6 +23,11 @@
       <height>431</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+     </font>
+    </property>
    </widget>
    <widget class="QComboBox" name="testresultBox">
     <property name="geometry">
@@ -32,6 +37,11 @@
       <width>69</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+     </font>
     </property>
     <item>
      <property name="text">
@@ -58,6 +68,11 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Menlo</family>
+     </font>
+    </property>
     <property name="placeholderText">
      <string>Search patient...</string>
     </property>
@@ -69,7 +84,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

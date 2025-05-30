@@ -37,6 +37,11 @@
           <height>100</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>Menlo</family>
+         </font>
+        </property>
         <property name="text">
          <string>Add patient</string>
         </property>
@@ -56,6 +61,11 @@
           <height>100</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>Menlo</family>
+         </font>
+        </property>
         <property name="text">
          <string>Patient list</string>
         </property>
@@ -71,6 +81,7 @@
         </property>
         <property name="font">
          <font>
+          <family>Menlo</family>
           <pointsize>30</pointsize>
          </font>
         </property>
@@ -98,6 +109,11 @@
           <width>200</width>
           <height>100</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Menlo</family>
+         </font>
         </property>
         <property name="text">
          <string>Covid test</string>
@@ -133,6 +149,11 @@
           <width>200</width>
           <height>100</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Menlo</family>
+         </font>
         </property>
         <property name="text">
          <string>Sign off</string>

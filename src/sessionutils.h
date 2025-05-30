@@ -1,14 +1,19 @@
 #pragma once 
 #include <QWidget>
-#include "loginscreen.h"
+#include "patient.h"
 
-namespace sessionutils {
-    template<typename MenuType>
-    void performSignOff(MenuType* currentMenu) { 
-        LoginScreen* loginScreen = new LoginScreen();
-        loginScreen->setAttribute(Qt::WA_DeleteOnClose);
-        loginScreen->show();
+// Forward declaration om circulaire includes te voorkomen
+class LoginScreen;
 
-        currentMenu->close();
-    }
-}
+class sessionutils {
+public:
+    // Reguliere functie in plaats van template functie
+    static void performSignOff(QWidget* widget);
+
+    // Patiënt management
+    static void setCurrentPatient(Patient* patient);
+    static Patient* getCurrentPatient();
+
+private:
+    static Patient* currentPatient;
+};

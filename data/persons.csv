@@ -1,5 +1,6 @@
 type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date
 Doctor;Ben;Aerts;1234;012345678;ben.aerts@hotmail.com;Cardiology;false;N/A
+Patient;Ben;Aerts;1234;012345678;ben.aerts@hotmail.com;;false;2024-01-15
 Patient;Jane;Doe;5678;987654321;jane.doe@email.com;;true;2024-01-15
 Patient;Bob;Johnson;9999;555123456;bob.johnson@email.com;;false;N/A
 Doctor;Alice;Brown;abcd;111222333;alice.brown@hospital.com;Neurology;false;N/A

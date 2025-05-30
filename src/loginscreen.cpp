@@ -3,9 +3,11 @@
 #include "patientmenu.h"
 #include <QDir>
 #include <QDebug>
+#include "sessionutils.h"
 
 LoginScreen::LoginScreen(QWidget *parent) : QDialog(parent) {
 	ui.setupUi(this);
+	setWindowTitle("Hospital System");
 
     QDir exeDir(QCoreApplication::applicationDirPath()); 
     exeDir.cdUp();             
@@ -49,7 +51,8 @@ void LoginScreen::on_loginButton_clicked() {
 			if (patient->getEmail() == username.toStdString() && patient->getPassword() == password.toStdString()) {
 				// Hier kun je nu patiënt-specifieke functionaliteit gebruiken als nodig
 				// Bijvoorbeeld: bool testResult = patient->getPositive();
-				
+				sessionutils::setCurrentPatient(patient.get());
+
 				PatientMenu* patientmenu = new PatientMenu();
 				patientmenu->setAttribute(Qt::WA_DeleteOnClose); 
 				patientmenu->show();

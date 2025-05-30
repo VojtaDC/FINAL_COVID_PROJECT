@@ -50,6 +50,9 @@ set(SOURCES
     src/regex_validation.cpp
     src/patientlist.cpp
     src/patientmenu.cpp
+    src/patientfiltermodel.cpp
+    src/patientdetails.cpp
+    src/sessionutils.cpp
 )
 
 # Header files
@@ -66,6 +69,9 @@ set(HEADERS
     src/regex_validation.h
     src/patientlist.h
     src/patientmenu.h
+    src/patientfiltermodel.h
+    src/patientdetails.h
+    src/sessionutils.h
 )
 
 # UI files
@@ -76,6 +82,8 @@ set(UI_FILES
     ui/addpatient.ui
     ui/patientlist.ui
     ui/patientmenu.ui
+    ui/patientdetails.ui
+    ui/patientaccount.ui
 )
 
 # Resource files

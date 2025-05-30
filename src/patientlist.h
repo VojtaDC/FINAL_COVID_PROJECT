@@ -1,8 +1,11 @@
 #pragma once
-
 #include "ui_patientlist.h"
+#include <QStandardItemModel>
+#include <QSortFilterProxyModel>
 #include "person.h"
 #include "patient.h"
+#include "patientfiltermodel.h"
+#include "patientdetails.h"
 
 class PatientList : public QMainWindow
 {
@@ -10,13 +13,19 @@ class PatientList : public QMainWindow
 
 public:
 	PatientList(QWidget *parent = Q_NULLPTR);
-	//~PatientMenu();
+	~PatientList();
 	
 private slots:
+	void onPatientClicked(const QModelIndex& _index);
+
 private:
 	Ui::PatientList ui;
 	std::vector<std::unique_ptr<Person>> patients;
-	std::vector<const Person*> shown_patients;
+	QStandardItemModel* m_table_model;
+	PatientFilterModel* m_filter_model;
+	PatientDetails* m_patient_details;
+	QString m_current_search;
+	QString m_current_option;
 	void fillTable();
 };
 
