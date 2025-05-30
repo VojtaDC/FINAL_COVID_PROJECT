@@ -13,6 +13,9 @@ PatientMenu::PatientMenu(QWidget *parent) : QMainWindow(parent) {
 	
 }
 
+PatientMenu::~PatientMenu() {
+}
+
 void PatientMenu::on_signoffButton_clicked() {
 	sessionutils::performSignOff(this); // Use the template function
 }
@@ -35,7 +38,7 @@ void PatientMenu::on_resultsButton_clicked() {
     Patient* currentPatient = sessionutils::getCurrentPatient();
     
     if (currentPatient) {
-        QString result = currentPatient->getPositive() ? "Positive" : "Negative";
+        QString result = currentPatient->isPositive() ? "Positive" : "Negative";
         QString date = QString::fromStdString(currentPatient->getLastTestDate());
         
         QMessageBox msgBox;

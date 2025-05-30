@@ -3,5 +3,5 @@
 
 class RegexValidation {
 public:
-	static bool isValidated(ValType type, const std::string& string);
+	static bool IsValidated(ValType _type, const std::string& _string);
 };

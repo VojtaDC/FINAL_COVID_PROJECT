@@ -8,7 +8,7 @@ class DoctorMenu : public QMainWindow
 
 public:
 	DoctorMenu(QWidget *parent = Q_NULLPTR);
-	//~DoctorMenu();
+	~DoctorMenu();
 	
 private slots:
 	void on_patientlistButton_clicked();

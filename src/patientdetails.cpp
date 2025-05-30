@@ -10,7 +10,7 @@ PatientDetails::PatientDetails(Patient* patient, QWidget *parent) : QDialog(pare
 		auto surname = new QStandardItem(QString::fromStdString(patient->getSurname()));
 		auto email = new QStandardItem(QString::fromStdString(patient->getEmail()));
 		auto phone = new QStandardItem(QString::fromStdString(patient->getPhoneNumber()));
-		auto positive = new QStandardItem((patient->getPositive() ? "Positive" : "Negative")); // Fixed: isPositive() -> getPositive() and typo
+		auto positive = new QStandardItem((patient->isPositive() ? "Positive" : "Negative"));
 		auto last_test_date = new QStandardItem(QString::fromStdString(patient->getLastTestDate()));
 
 		m_table_model->setItem(0, 0, name);

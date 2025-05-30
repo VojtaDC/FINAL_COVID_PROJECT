@@ -9,12 +9,12 @@
 
 
 // New type-based implementation
-std::vector<std::unique_ptr<Person>> CsvLoader::loadAllPersons(const std::string& filepath) {
+std::vector<std::unique_ptr<Person>> CsvLoader::LoadAllPersons(const std::string& _filepath) {
     std::vector<std::unique_ptr<Person>> persons;
-    std::ifstream file(filepath);
+    std::ifstream file(_filepath);
     
     if (!file.is_open()) {
-        std::cerr << "[CsvLoader] Kan bestand niet openen: " << filepath << "\n";
+        std::cerr << "[CsvLoader] Kan bestand niet openen: " << _filepath << "\n";
         return persons;
     }
     
@@ -30,7 +30,7 @@ std::vector<std::unique_ptr<Person>> CsvLoader::loadAllPersons(const std::string
             fields.push_back(field);
         }
         
-        if (auto person = createPersonFromData(fields)) {
+        if (auto person = CreatePersonFromData(fields)) {
             persons.push_back(std::move(person));
         }
     }
@@ -38,27 +38,25 @@ std::vector<std::unique_ptr<Person>> CsvLoader::loadAllPersons(const std::string
     return persons;
 }
 
-std::unique_ptr<Person> CsvLoader::createPersonFromData(const std::vector<std::string>& data) {
-    if (data.size() < 6) {
+std::unique_ptr<Person> CsvLoader::CreatePersonFromData(const std::vector<std::string>& _data) {
+    if (_data.size() < 6) {
         std::cerr << "[CsvLoader] Onvoldoende data in rij\n";
         return nullptr;
     }
     
-    const std::string& type = data[0];
+    const std::string& type = _data[0];
     
     if (type == "Doctor") {
-        if (data.size() < 7) return nullptr;
-        // type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date
-        return std::make_unique<Doctor>(
-            data[1], data[2], data[3], data[4], data[5], data[6]
+        if (_data.size() < 7) return nullptr;
+                return std::make_unique<Doctor>(
+            _data[1], _data[2], _data[3], _data[4], _data[5], _data[6]
         );
     }
     else if (type == "Patient") {
-        if (data.size() < 9) return nullptr;
-        // type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date
-        bool isPositive = (data[7] == "true");
+        if (_data.size() < 9) return nullptr;
+        bool isPositive = (_data[7] == "true");
         return std::make_unique<Patient>(
-            data[1], data[2], data[3], data[4], data[5], isPositive, data[8]
+            _data[1], _data[2], _data[3], _data[4], _data[5], isPositive, _data[8]
         );
     }
     else {
@@ -67,12 +65,11 @@ std::unique_ptr<Person> CsvLoader::createPersonFromData(const std::vector<std::s
     }
 }
 
-std::vector<std::unique_ptr<Doctor>> CsvLoader::filterDoctors(const std::vector<std::unique_ptr<Person>>& persons) {
+std::vector<std::unique_ptr<Doctor>> CsvLoader::FilterDoctors(const std::vector<std::unique_ptr<Person>>& _persons) {
     std::vector<std::unique_ptr<Doctor>> doctors;
     
-    for (const auto& person : persons) {
+    for (const auto& person : _persons) {
         if (Doctor* doctor = dynamic_cast<Doctor*>(person.get())) {
-            // Create a copy of the doctor
             doctors.push_back(std::make_unique<Doctor>(
                 doctor->getName(),
                 doctor->getSurname(),
@@ -87,23 +84,82 @@ std::vector<std::unique_ptr<Doctor>> CsvLoader::filterDoctors(const std::vector<
     return doctors;
 }
 
-std::vector<std::unique_ptr<Patient>> CsvLoader::filterPatients(const std::vector<std::unique_ptr<Person>>& persons) {
+std::vector<std::unique_ptr<Patient>> CsvLoader::FilterPatients(const std::vector<std::unique_ptr<Person>>& _persons) {
     std::vector<std::unique_ptr<Patient>> patients;
     
-    for (const auto& person : persons) {
+    for (const auto& person : _persons) {
         if (Patient* patient = dynamic_cast<Patient*>(person.get())) {
-            // Create a copy of the patient
             patients.push_back(std::make_unique<Patient>(
                 patient->getName(),
                 patient->getSurname(),
                 patient->getPassword(),
                 patient->getPhoneNumber(),
                 patient->getEmail(),
-                patient->getPositive(),
+                patient->isPositive(),
                 patient->getLastTestDate()
             ));
         }
     }
     
     return patients;
+}
+
+void CsvLoader::SavePatients(const std::vector<std::unique_ptr<Person>>& _patients, const std::string&& _filepath) {
+    std::ofstream m_fileStream;
+    m_fileStream.open(_filepath);
+    if (m_fileStream.is_open())
+    {
+        m_fileStream << "type;name;surname;password;phoneNumber;email;positive;last_test_date" << std::endl;
+        for (const auto& m_p : _patients) {
+            const Patient* m_patient = dynamic_cast<const Patient*>(m_p.get());
+            if (m_patient) {
+                m_fileStream << "Patient" << ";"
+                    << m_patient->getName() << ";"
+                    << m_patient->getSurname() << ";"
+                    << m_patient->getPassword() << ";"
+                    << m_patient->getPhoneNumber() << ";"
+                    << m_patient->getEmail() << ";"
+                    << (m_patient->isPositive() ? "true" : "false") << ";"
+                    << m_patient->getLastTestDate()
+                    << std::endl;
+            }
+        }
+        m_fileStream.close();
+    }
+}
+
+void CsvLoader::SaveAllPersons(const std::vector<std::unique_ptr<Person>>& _persons, const std::string& _filepath) {
+    std::ofstream m_fileStream;
+    m_fileStream.open(_filepath);
+    if (m_fileStream.is_open())
+    {
+        m_fileStream << "type;name;surname;password;phoneNumber;email;specialization;positive;last_test_date" << std::endl;
+        for (const auto& person : _persons) {
+            if (const Patient* patient = dynamic_cast<const Patient*>(person.get())) {
+                m_fileStream << "Patient" << ";"
+                    << patient->getName() << ";"
+                    << patient->getSurname() << ";"
+                    << patient->getPassword() << ";"
+                    << patient->getPhoneNumber() << ";"
+                    << patient->getEmail() << ";"
+                    << ";" // empty specialization for patients
+                    << (patient->isPositive() ? "true" : "false") << ";"
+                    << patient->getLastTestDate()
+                    << std::endl;
+            }
+            else if (const Doctor* doctor = dynamic_cast<const Doctor*>(person.get())) {
+                m_fileStream << "Doctor" << ";"
+                    << doctor->getName() << ";"
+                    << doctor->getSurname() << ";"
+                    << doctor->getPassword() << ";"
+                    << doctor->getPhoneNumber() << ";"
+                    << doctor->getEmail() << ";"
+                    << doctor->getSpecialization() << ";"
+                    << "false" << ";" // doctors don't have positive status
+                    << "N/A" // doctors don't have test dates
+                    << std::endl;
+            }
+        }
+        m_fileStream.close();
+    }
 }

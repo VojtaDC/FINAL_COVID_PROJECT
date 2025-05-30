@@ -1,23 +1,26 @@
 #include "patient.h"
 #include <iostream>
 
-Patient::Patient(const std::string& name, const std::string& surname, const std::string& password, 
-	const std::string& phoneNumber, const std::string& email, bool positive, const std::string& lastTestDate)
-	: Person(name, surname, password, phoneNumber, email), positive(positive), lastTestDate(lastTestDate) {}
+Patient::Patient(const std::string& _name, const std::string& _surname, const std::string& _password, 
+	const std::string& _phoneNumber, const std::string& _email, bool _positive, const std::string& _lastTestDate)
+	: Person(_name, _surname, _password, _phoneNumber, _email), m_positive(_positive), m_lastTestDate(_lastTestDate) {}
 
 
-bool Patient::getPositive() {
-	return positive;
+bool Patient::isPositive() const {
+	return m_positive;
 }
 
-std::string Patient::getLastTestDate() {
-	return lastTestDate;
+std::string Patient::getLastTestDate() const {
+	return m_lastTestDate;
 }
 
-void Patient::setLastTestDate(const std::string& newLastTestDate) {
-	lastTestDate = newLastTestDate;
+void Patient::setLastTestDate(const std::string& _newLastTestDate) {
+	m_lastTestDate = _newLastTestDate;
 }
 
-void Patient::setPositive(bool newResult) {
-	positive = newResult;
+void Patient::setPositive(bool _newResult) {
+	m_positive = _newResult;
+}
+
+Patient::~Patient() {
 }

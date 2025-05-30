@@ -1,46 +1,47 @@
 #include "person.h"
 #include <iostream>
 
-Person::Person(const std::string& name, const std::string& surname, const std::string& password, const std::string& phoneNumber, const std::string& email)
-	: name(name), surname(surname), password(password), phoneNumber(phoneNumber), email(email) {}
+Person::Person(const std::string& _name, const std::string& _surname, const std::string& _password, const std::string& _phoneNumber, const std::string& _email)
+	: m_name(_name), m_surname(_surname), m_password(_password), m_phoneNumber(_phoneNumber),  m_email(_email){}
 
 std::string Person::getName() const {
-	return name;
+	return m_name;
 }
 
 std::string Person::getSurname() const {
-	return surname;
+	return m_surname;
 }
 
-
 std::string Person::getPassword() const {
-	return password;
+	return m_password;
 }
 
 std::string Person::getPhoneNumber() const {
-	return phoneNumber;
+	return m_phoneNumber;
 }
 
 std::string Person::getEmail() const {
-	return email;
+	return m_email;
 }
-void Person::setName(const std::string& newName) {
-	name = newName;
-}
-
-void Person::setSurname(const std::string& newSurname) {
-	surname = newSurname;
+void Person::setName(const std::string& _newName) {
+	m_name = _newName;
 }
 
-
-void Person::setPassword(const std::string& newPassword) {
-	password = newPassword;
+void Person::setSurname(const std::string& _newSurname) {
+	m_surname = _newSurname;
 }
 
-void Person::setPhoneNumber(const std::string& newPhoneNumber) {
-	phoneNumber = newPhoneNumber;
+void Person::setPassword(const std::string& _newPassword) {
+	m_password = _newPassword;
 }
 
-void Person::setEmail(const std::string& newEmail) {
-	email = newEmail;
+void Person::setPhoneNumber(const std::string& _newPhoneNumber) {
+	m_phoneNumber = _newPhoneNumber;
+}
+
+void Person::setEmail(const std::string& _newEmail) {
+	m_email = _newEmail;
+}
+
+Person::~Person() {
 }

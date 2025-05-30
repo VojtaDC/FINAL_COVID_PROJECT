@@ -16,11 +16,15 @@ public:
 	~PatientList();
 	
 private slots:
-	void onPatientClicked(const QModelIndex& _index);
+	void onPatientDoubleClicked(const QModelIndex& _index);
+	void on_addpatientButton_clicked();
+	void on_removepatientButton_clicked();
+	void addPatientToList(Patient* _new_patient);
 
 private:
 	Ui::PatientList ui;
-	std::vector<std::unique_ptr<Person>> patients;
+	std::vector<std::unique_ptr<Person>> m_patients;
+	std::vector<std::unique_ptr<Person>> m_all_persons; // Store all persons (doctors + patients)
 	QStandardItemModel* m_table_model;
 	PatientFilterModel* m_filter_model;
 	PatientDetails* m_patient_details;

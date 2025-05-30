@@ -11,12 +11,12 @@ class PatientMenu : public QMainWindow
 
 public:
 	PatientMenu(QWidget *parent = Q_NULLPTR);
-	//~PatientMenu();
+	~PatientMenu();
 	
 private slots:
 	void on_signoffButton_clicked();
-	void on_accountButton_clicked(); // Add this line
-	void on_resultsButton_clicked(); // Add this line for results button functionality
+	void on_accountButton_clicked(); 
+	void on_resultsButton_clicked(); 
 
 private:
 	Ui::PatientMenu ui;

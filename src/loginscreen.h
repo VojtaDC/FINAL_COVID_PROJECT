@@ -14,7 +14,7 @@ class LoginScreen : public QDialog
 
 public:
 	LoginScreen(QWidget *parent = Q_NULLPTR);
-	//~LoginScreen();
+	~LoginScreen();
 	
 private slots:
 	void on_loginButton_clicked();
