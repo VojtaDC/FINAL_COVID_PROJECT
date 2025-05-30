@@ -36,6 +36,7 @@ void LoginScreen::on_loginButton_clicked() {
 			if (doctor->getEmail() == username.toStdString() && doctor->getPassword() == password.toStdString()) {
 				// Hier kun je nu dokter-specifieke functionaliteit gebruiken als nodig
 				// Bijvoorbeeld: QString specialization = QString::fromStdString(doctor->getSpecialization());
+				sessionutils::setCurrentDoctor(doctor.get());
 				
 				DoctorMenu* doctorMenu = new DoctorMenu();
 				doctorMenu->setAttribute(Qt::WA_DeleteOnClose);

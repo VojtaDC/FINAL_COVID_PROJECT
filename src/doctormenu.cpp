@@ -6,6 +6,13 @@
 
 DoctorMenu::DoctorMenu(QWidget *parent) : QMainWindow(parent) {
 	ui.setupUi(this);
+
+	setAttribute(Qt::WA_DeleteOnClose);
+	QString userFirstName = sessionutils::getCurrentUserFirstName();
+    
+	setWindowTitle("Doctor Dashboard");
+	ui.labelTitle->setText("Welcome " + userFirstName+ "!"); // Set the title label with the current user's name
+	
 }
 
 void DoctorMenu::on_patientlistButton_clicked() {

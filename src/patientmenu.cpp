@@ -6,7 +6,11 @@
 PatientMenu::PatientMenu(QWidget *parent) : QMainWindow(parent) {
 	ui.setupUi(this);
 	setAttribute(Qt::WA_DeleteOnClose); // Ensure the menu is deleted when closed
-
+	QString userFirstName = sessionutils::getCurrentUserFirstName();
+    
+	setWindowTitle("Patient Dashboard");
+	ui.labelTitle->setText("Welcome " + userFirstName+ "!"); // Set the title label with the current user's name
+	
 }
 
 void PatientMenu::on_signoffButton_clicked() {

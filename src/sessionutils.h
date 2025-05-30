@@ -1,6 +1,7 @@
 #pragma once 
 #include <QWidget>
 #include "patient.h"
+#include "doctor.h"
 
 // Forward declaration om circulaire includes te voorkomen
 class LoginScreen;
@@ -14,6 +15,12 @@ public:
     static void setCurrentPatient(Patient* patient);
     static Patient* getCurrentPatient();
 
+    static void setCurrentDoctor(Doctor* doctor);
+    static Doctor* getCurrentDoctor();
+
+    static QString getCurrentUserFirstName();
+
 private:
     static Patient* currentPatient;
+    static Doctor* currentDoctor;
 };
