@@ -3,5 +3,7 @@
 #include "UVLADIE3JM/moc_doctormenu.cpp"
 #include "UVLADIE3JM/moc_loginscreen.cpp"
 #include "UVLADIE3JM/moc_mainwindow.cpp"
+#include "UVLADIE3JM/moc_patientdetails.cpp"
+#include "UVLADIE3JM/moc_patientfiltermodel.cpp"
 #include "UVLADIE3JM/moc_patientlist.cpp"
 #include "UVLADIE3JM/moc_patientmenu.cpp"

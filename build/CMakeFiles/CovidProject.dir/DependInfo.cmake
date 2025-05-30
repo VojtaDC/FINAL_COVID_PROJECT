@@ -18,10 +18,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/main.cpp" "CMakeFiles/CovidProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/main.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/mainwindow.cpp" "CMakeFiles/CovidProject.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/mainwindow.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patient.cpp" "CMakeFiles/CovidProject.dir/src/patient.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/patient.cpp.o.d"
+  "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientdetails.cpp" "CMakeFiles/CovidProject.dir/src/patientdetails.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/patientdetails.cpp.o.d"
+  "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientfiltermodel.cpp" "CMakeFiles/CovidProject.dir/src/patientfiltermodel.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/patientfiltermodel.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientlist.cpp" "CMakeFiles/CovidProject.dir/src/patientlist.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/patientlist.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientmenu.cpp" "CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/patientmenu.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/person.cpp" "CMakeFiles/CovidProject.dir/src/person.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/person.cpp.o.d"
   "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/regex_validation.cpp" "CMakeFiles/CovidProject.dir/src/regex_validation.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/regex_validation.cpp.o.d"
+  "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/sessionutils.cpp" "CMakeFiles/CovidProject.dir/src/sessionutils.cpp.o" "gcc" "CMakeFiles/CovidProject.dir/src/sessionutils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

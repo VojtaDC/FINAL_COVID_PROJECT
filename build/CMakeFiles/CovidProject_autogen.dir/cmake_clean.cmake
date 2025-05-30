@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CovidProject_autogen/include/ui/ui_doctormenu.h"
   "CovidProject_autogen/include/ui/ui_loginscreen.h"
   "CovidProject_autogen/include/ui/ui_mainwindow.h"
+  "CovidProject_autogen/include/ui/ui_patientaccount.h"
+  "CovidProject_autogen/include/ui/ui_patientdetails.h"
   "CovidProject_autogen/include/ui/ui_patientlist.h"
   "CovidProject_autogen/include/ui/ui_patientmenu.h"
   "CovidProject_autogen/mocs_compilation.cpp"

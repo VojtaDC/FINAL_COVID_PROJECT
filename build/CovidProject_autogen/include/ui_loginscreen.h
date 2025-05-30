@@ -12,13 +12,11 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,118 +24,95 @@ QT_BEGIN_NAMESPACE
 class Ui_LoginScreen
 {
 public:
-    QWidget *layoutWidget;
-    QVBoxLayout *verticalLayout_2;
-    QSpacerItem *verticalSpacer;
-    QHBoxLayout *horizontalLayout_4;
-    QSpacerItem *horizontalSpacer;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *label;
-    QLineEdit *emailEdit;
-    QHBoxLayout *horizontalLayout;
+    QLabel *labelTitle;
+    QWidget *widget;
+    QGridLayout *gridLayout_2;
+    QPushButton *loginButton;
+    QRadioButton *doctorButton;
+    QGridLayout *gridLayout;
     QLabel *label_2;
     QLineEdit *passwordEdit;
-    QHBoxLayout *horizontalLayout_3;
-    QRadioButton *doctorButton;
+    QLineEdit *emailEdit;
+    QLabel *label;
     QRadioButton *patientButton;
-    QPushButton *loginButton;
-    QSpacerItem *horizontalSpacer_2;
-    QSpacerItem *verticalSpacer_2;
 
     void setupUi(QDialog *LoginScreen)
     {
         if (LoginScreen->objectName().isEmpty())
             LoginScreen->setObjectName(QString::fromUtf8("LoginScreen"));
-        LoginScreen->resize(355, 247);
+        LoginScreen->resize(350, 200);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(LoginScreen->sizePolicy().hasHeightForWidth());
         LoginScreen->setSizePolicy(sizePolicy);
-        layoutWidget = new QWidget(LoginScreen);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(-48, -28, 477, 289));
-        verticalLayout_2 = new QVBoxLayout(layoutWidget);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        verticalSpacer = new QSpacerItem(20, 88, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        horizontalSpacer = new QSpacerItem(118, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_4->addItem(horizontalSpacer);
-
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        horizontalLayout_2->addWidget(label);
-
-        emailEdit = new QLineEdit(layoutWidget);
-        emailEdit->setObjectName(QString::fromUtf8("emailEdit"));
-
-        horizontalLayout_2->addWidget(emailEdit);
-
-
-        verticalLayout->addLayout(horizontalLayout_2);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label_2 = new QLabel(layoutWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        horizontalLayout->addWidget(label_2);
-
-        passwordEdit = new QLineEdit(layoutWidget);
-        passwordEdit->setObjectName(QString::fromUtf8("passwordEdit"));
-        passwordEdit->setEchoMode(QLineEdit::PasswordEchoOnEdit);
-
-        horizontalLayout->addWidget(passwordEdit);
-
-
-        verticalLayout->addLayout(horizontalLayout);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        doctorButton = new QRadioButton(layoutWidget);
-        doctorButton->setObjectName(QString::fromUtf8("doctorButton"));
-
-        horizontalLayout_3->addWidget(doctorButton);
-
-        patientButton = new QRadioButton(layoutWidget);
-        patientButton->setObjectName(QString::fromUtf8("patientButton"));
-
-        horizontalLayout_3->addWidget(patientButton);
-
-        loginButton = new QPushButton(layoutWidget);
+        LoginScreen->setMinimumSize(QSize(350, 200));
+        LoginScreen->setMaximumSize(QSize(350, 200));
+        labelTitle = new QLabel(LoginScreen);
+        labelTitle->setObjectName(QString::fromUtf8("labelTitle"));
+        labelTitle->setGeometry(QRect(140, 20, 55, 21));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Menlo"));
+        font.setPointSize(18);
+        labelTitle->setFont(font);
+        widget = new QWidget(LoginScreen);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(40, 70, 271, 97));
+        gridLayout_2 = new QGridLayout(widget);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        loginButton = new QPushButton(widget);
         loginButton->setObjectName(QString::fromUtf8("loginButton"));
         loginButton->setEnabled(true);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Menlo"));
+        loginButton->setFont(font1);
 
-        horizontalLayout_3->addWidget(loginButton);
+        gridLayout_2->addWidget(loginButton, 1, 2, 1, 1);
+
+        doctorButton = new QRadioButton(widget);
+        doctorButton->setObjectName(QString::fromUtf8("doctorButton"));
+        doctorButton->setFont(font1);
+
+        gridLayout_2->addWidget(doctorButton, 1, 0, 1, 1);
+
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setFont(font1);
+        label_2->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_2, 1, 0, 1, 2);
+
+        passwordEdit = new QLineEdit(widget);
+        passwordEdit->setObjectName(QString::fromUtf8("passwordEdit"));
+        passwordEdit->setFont(font1);
+        passwordEdit->setEchoMode(QLineEdit::PasswordEchoOnEdit);
+
+        gridLayout->addWidget(passwordEdit, 1, 2, 1, 1);
+
+        emailEdit = new QLineEdit(widget);
+        emailEdit->setObjectName(QString::fromUtf8("emailEdit"));
+        emailEdit->setFont(font1);
+
+        gridLayout->addWidget(emailEdit, 0, 2, 1, 1);
+
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setFont(font1);
+        label->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label, 0, 0, 1, 2);
 
 
-        verticalLayout->addLayout(horizontalLayout_3);
+        gridLayout_2->addLayout(gridLayout, 0, 0, 1, 3);
 
+        patientButton = new QRadioButton(widget);
+        patientButton->setObjectName(QString::fromUtf8("patientButton"));
+        patientButton->setFont(font1);
 
-        horizontalLayout_4->addLayout(verticalLayout);
-
-        horizontalSpacer_2 = new QSpacerItem(148, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_4->addItem(horizontalSpacer_2);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_4);
-
-        verticalSpacer_2 = new QSpacerItem(20, 108, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer_2);
+        gridLayout_2->addWidget(patientButton, 1, 1, 1, 1);
 
 
         retranslateUi(LoginScreen);
@@ -148,12 +123,13 @@ public:
     void retranslateUi(QDialog *LoginScreen)
     {
         LoginScreen->setWindowTitle(QApplication::translate("LoginScreen", "Login", nullptr));
-        label->setText(QApplication::translate("LoginScreen", "Email:", nullptr));
+        labelTitle->setText(QApplication::translate("LoginScreen", "Login", nullptr));
+        loginButton->setText(QApplication::translate("LoginScreen", "Login", nullptr));
+        doctorButton->setText(QApplication::translate("LoginScreen", "Doctor", nullptr));
         label_2->setText(QApplication::translate("LoginScreen", "Password:", nullptr));
         passwordEdit->setInputMask(QString());
-        doctorButton->setText(QApplication::translate("LoginScreen", "Doctor", nullptr));
+        label->setText(QApplication::translate("LoginScreen", "Email:", nullptr));
         patientButton->setText(QApplication::translate("LoginScreen", "Patient", nullptr));
-        loginButton->setText(QApplication::translate("LoginScreen", "Login", nullptr));
     } // retranslateUi
 
 };

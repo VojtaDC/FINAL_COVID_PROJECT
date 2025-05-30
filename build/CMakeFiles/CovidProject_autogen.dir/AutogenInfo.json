@@ -3,36 +3,36 @@
 	"CMAKE_BINARY_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build",
 	"CMAKE_CURRENT_BINARY_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT",
-	"CMAKE_EXECUTABLE" : "/opt/homebrew/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/Applications/CMake.app/Contents/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
 		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/CMakeLists.txt",
-		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/3.31.6/CMakeSystem.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake",
-		"/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake",
-		"/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake",
-		"/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
-		"/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake",
-		"/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake",
-		"/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake",
+		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/4.0.0-rc2/CMakeSystem.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Darwin-Initialize.cmake",
+		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/4.0.0-rc2/CMakeCXXCompiler.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeGenericSystem.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Darwin.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/UnixPaths.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeCXXInformation.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Compiler/AppleClang-CXX.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Compiler/Clang.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Compiler/GNU.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Apple-AppleClang-CXX.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Apple-Clang-CXX.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Apple-Clang.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Linker/AppleClang-CXX.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Linker/AppleClang.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/Platform/Linker/Apple-AppleClang.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5/Qt5Config.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
@@ -41,7 +41,7 @@
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeParseArguments.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeParseArguments.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake",
@@ -67,7 +67,7 @@
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Widgets/Qt5Widgets_QMacStylePlugin.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeParseArguments.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeParseArguments.cmake",
 		"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/resources/mainwindow.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT",
@@ -125,6 +125,18 @@
 			null
 		],
 		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientdetails.h",
+			"MU",
+			"UVLADIE3JM/moc_patientdetails.cpp",
+			null
+		],
+		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientfiltermodel.h",
+			"MU",
+			"UVLADIE3JM/moc_patientfiltermodel.cpp",
+			null
+		],
+		[
 			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientlist.h",
 			"MU",
 			"UVLADIE3JM/moc_patientlist.cpp",
@@ -147,12 +159,18 @@
 			"MU",
 			"UVLADIE3JM/moc_regex_validation.cpp",
 			null
+		],
+		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/sessionutils.h",
+			"MU",
+			"UVLADIE3JM/moc_sessionutils.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -185,7 +203,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+		"/Applications/CMake.app/Contents/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
@@ -241,6 +259,16 @@
 			null
 		],
 		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientdetails.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientfiltermodel.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/patientlist.cpp",
 			"MU",
 			null
@@ -257,6 +285,11 @@
 		],
 		[
 			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/regex_validation.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/src/sessionutils.cpp",
 			"MU",
 			null
 		]

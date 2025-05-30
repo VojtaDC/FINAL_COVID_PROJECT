@@ -5,7 +5,7 @@
 	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT",
 	"CMAKE_SOURCE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT",
 	"CROSS_CONFIG" : false,
-	"GENERATOR" : "Ninja",
+	"GENERATOR" : "Unix Makefiles",
 	"INCLUDE_DIR" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CovidProject_autogen/include",
 	"INPUTS" : [],
 	"LOCK_FILE" : "/Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3 Ba EIT/System Programming/FINAL_COVID_PROJECT/build/CMakeFiles/CovidProject_autogen.dir/AutoRcc_mainwindow_3YJK5W5UP7_Lock.lock",
