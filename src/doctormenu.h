@@ -14,7 +14,6 @@ private slots:
 	void on_patientlistButton_clicked();
 	void on_covidtestButton_clicked();
 	void on_signoffButton_clicked();
-	void on_addpatientButton_clicked();
 private:
 	Ui::DoctorMenu ui;
 };

@@ -4,3 +4,6 @@ Patient;Ben;Aerts;1234;012345678;ben.aerts@hotmail.com;;false;2024-01-15
 Patient;Jane;Doe;5678;987654321;jane.doe@email.com;;true;2024-01-15
 Patient;Bob;Johnson;9999;555123456;bob.johnson@email.com;;false;N/A
 Doctor;Alice;Brown;abcd;111222333;alice.brown@hospital.com;Neurology;false;N/A
+Votja;DeConinck;1234;0456013017;vojtadeconinck@gmail.com;false;N/A
+Vojta;DeConinck;1234;0456013019;vojtadeconinck1@gmail.com;false;N/A
+Vojta;DeConinck;1234;0456013018;vojtadeconinck@gmail.com;false;N/A

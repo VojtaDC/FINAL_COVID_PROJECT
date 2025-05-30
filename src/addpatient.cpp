@@ -9,6 +9,7 @@
 #include "person.h"
 #include "ui_addpatient.h"
 #include <QDir>
+#include "paths.h"
 
 AddPatient::AddPatient(QWidget *_parent) : QDialog(_parent) {
 	ui.setupUi(this);
@@ -19,7 +20,25 @@ void AddPatient::on_addButton_clicked() {
 	QString surname = ui.surnameEdit->text();
 	QString email = ui.emailEdit->text();
 	QString phone = ui.phoneEdit->text();
-	
+	// Input validation
+	if (name.isEmpty() || surname.isEmpty() || email.isEmpty() || phone.isEmpty()) {
+		QMessageBox::warning(this, "Error", "Please fill in all the boxes");
+		return;
+	}
+	else if (!(RegexValidation::IsValidated(ValType::EMail, email.toStdString()))) {
+		QMessageBox::warning(this, "Error", "Not a valid e-mail address");
+		return;
+	}
+	else if (!(RegexValidation::IsValidated(ValType::GSM, phone.toStdString())) && 
+			 !(RegexValidation::IsValidated(ValType::Phone, phone.toStdString()))) {
+		QMessageBox::warning(this, "Error", "Not a valid phone number");
+		return;
+	}
+	bool juistemail = RegexValidation::IsValidated(ValType::EMail, "vojtadeconinck@gmail.com");
+	bool juistegsm = RegexValidation::IsValidated(ValType::GSM, "0456013017");
+	bool juistephone = RegexValidation::IsValidated(ValType::Phone, "045601301");
+
+
 	if (name.isEmpty() || surname.isEmpty() || email.isEmpty() || phone.isEmpty()) {
 		QMessageBox::warning(this, "Error", "Please fill in all the boxes");
 		return;
@@ -35,14 +54,11 @@ void AddPatient::on_addButton_clicked() {
 		return;
 
 	}
-	
 	std::ofstream file_stream;
-	
-	file_stream.open("Data/patient.csv", std::ios::app);
+	file_stream.open(getPersonsFilePath().toStdString(), std::ios::app);
 	if (!file_stream.is_open()) {
 		//Errror
 	}
-
 	//Patient CSV structure: name,surname,password,phoneNumber,email,positive,last_test_date
 	std::string name_std = name.toStdString();
 	std::string surname_std = surname.toStdString();
@@ -51,6 +67,7 @@ void AddPatient::on_addButton_clicked() {
 	std::string positive = "false";
 	std::string last_test_date = "N/A";
 	std::string password = "1234"; //Zorgen dat paswoord random gegenereerd wordt
+
 	file_stream << name_std << ";" << surname_std << ";" << password << ";" << phone_std << ";" << email_std << ";" << positive << ";" << last_test_date << std::endl;
 	file_stream.close();
 	bool positive_bool = (positive == "true");

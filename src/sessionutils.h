@@ -18,7 +18,7 @@ public:
     static void setCurrentDoctor(Doctor* doctor);
     static Doctor* getCurrentDoctor();
 
-    static QString getCurrentUserFirstName();
+    static QString getCurrentUserFirstName();  // Deze naam moet overeenkomen met de implementatie
 
 private:
     static Patient* currentPatient;

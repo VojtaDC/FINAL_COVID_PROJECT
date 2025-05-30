@@ -4,7 +4,7 @@
 #include <QDir>
 #include <QDebug>
 #include "sessionutils.h"
-
+#include "paths.h"
 LoginScreen::LoginScreen(QWidget *parent) : QDialog(parent) {
 	ui.setupUi(this);
 	setWindowTitle("Hospital System");
@@ -12,7 +12,7 @@ LoginScreen::LoginScreen(QWidget *parent) : QDialog(parent) {
     QDir exeDir(QCoreApplication::applicationDirPath()); 
     exeDir.cdUp();             
     exeDir.cd("data");
-    QString personsFile = exeDir.filePath("persons.csv");    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
+    QString personsFile = getPersonsFilePath();    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
     auto allPersons = CsvLoader::LoadAllPersons(personsFile.toStdString());
     
     // Filter patients en doctors uit de gecombineerde lijst

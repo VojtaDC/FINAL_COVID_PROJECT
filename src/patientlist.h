@@ -7,6 +7,7 @@
 #include "patientfiltermodel.h"
 #include "patientdetails.h"
 
+
 class PatientList : public QMainWindow
 {
 	Q_OBJECT

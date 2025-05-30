@@ -8,6 +8,8 @@
 #include <QTableView>
 #include <QDir>
 #include <QMessageBox>
+#include "paths.h"
+
 
 PatientList::PatientList(QWidget *parent) : QMainWindow(parent), m_table_model(nullptr) {	
 	ui.setupUi(this);
@@ -16,7 +18,7 @@ PatientList::PatientList(QWidget *parent) : QMainWindow(parent), m_table_model(n
 	QDir exeDir(QCoreApplication::applicationDirPath()); 
     exeDir.cdUp();             
     exeDir.cd("data");
-    QString personsFile = exeDir.filePath("persons.csv");    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
+    QString personsFile = getPersonsFilePath();    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
     m_all_persons = CsvLoader::LoadAllPersons(personsFile.toStdString());
 	
 	for (const auto& person : m_all_persons) {
@@ -90,7 +92,9 @@ void PatientList::onPatientDoubleClicked(const QModelIndex& _index) {
 
 void PatientList::on_addpatientButton_clicked() {
 	AddPatient addpatient;
-	connect(&addpatient, &AddPatient::patientAdded, this, &PatientList::addPatientToList);
+	disconnect(&addpatient, &AddPatient::patientAdded, nullptr, nullptr); // Clear any existing connections
+    connect(&addpatient, &AddPatient::patientAdded, this, &PatientList::addPatientToList);
+    
 	addpatient.exec();
 }
 
@@ -108,7 +112,7 @@ void PatientList::on_removepatientButton_clicked() {
 		m_patients.erase(m_patients.begin() + row_number); //.begin is nodig omdat .erase een iterator gebruikt en niet gewoon een index .begin geeft de iterator van het begin van de vector en row_number verhooogt deze dan tot naar de juiste patient gewezen wordt
 		m_table_model->removeRow(row_number);
 
-		CsvLoader::SavePatients(m_patients, "Data/patient.csv");
+		CsvLoader::SavePatients(m_patients, getPersonsFilePath().toStdString());
 	}
 
 }
