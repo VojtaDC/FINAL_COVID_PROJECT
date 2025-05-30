@@ -21,6 +21,7 @@ PatientList::PatientList(QWidget *parent) : QMainWindow(parent), m_table_model(n
 	
 	for (const auto& person : m_all_persons) {
 		if (dynamic_cast<Patient*>(person.get())) {
+			// Move the Patient from allPersons to patients vector
 			m_patients.push_back(std::move(const_cast<std::unique_ptr<Person>&>(person)));
 		}
 	}

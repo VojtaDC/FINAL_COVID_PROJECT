@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Add patient</string>
+   <string>Dialog</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">

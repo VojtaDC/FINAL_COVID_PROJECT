@@ -37,6 +37,7 @@ void AddPatient::on_addButton_clicked() {
 	}
 	
 	std::ofstream file_stream;
+	
 	file_stream.open("Data/patient.csv", std::ios::app);
 	if (!file_stream.is_open()) {
 		//Errror
