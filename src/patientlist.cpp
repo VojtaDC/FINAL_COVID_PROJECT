@@ -19,21 +19,9 @@ PatientList::PatientList(QWidget *parent) : QMainWindow(parent), m_table_model(n
     QString personsFile = exeDir.filePath("persons.csv");    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
     m_all_persons = CsvLoader::LoadAllPersons(personsFile.toStdString());
 	
-	// Convert specific patients to Person pointers
 	for (const auto& person : m_all_persons) {
 		if (dynamic_cast<Patient*>(person.get())) {
-			// Create a copy for the patients vector (don't move, keep original in all_persons)
-			Patient* original_patient = dynamic_cast<Patient*>(person.get());
-			auto patient_copy = std::make_unique<Patient>(
-				original_patient->getName(),
-				original_patient->getSurname(),
-				original_patient->getPassword(),
-				original_patient->getPhoneNumber(),
-				original_patient->getEmail(),
-				original_patient->isPositive(),
-				original_patient->getLastTestDate()
-			);
-			m_patients.push_back(std::move(patient_copy));
+			m_patients.push_back(std::move(const_cast<std::unique_ptr<Person>&>(person)));
 		}
 	}
 	
