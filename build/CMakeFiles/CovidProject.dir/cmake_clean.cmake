@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CovidProject.dir/CovidProject_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/CovidProject.dir/src/addpatient.cpp.o"
   "CMakeFiles/CovidProject.dir/src/addpatient.cpp.o.d"
+  "CMakeFiles/CovidProject.dir/src/covidanalyzer.cpp.o"
+  "CMakeFiles/CovidProject.dir/src/covidanalyzer.cpp.o.d"
   "CMakeFiles/CovidProject.dir/src/csvloader.cpp.o"
   "CMakeFiles/CovidProject.dir/src/csvloader.cpp.o.d"
   "CMakeFiles/CovidProject.dir/src/doctor.cpp.o"

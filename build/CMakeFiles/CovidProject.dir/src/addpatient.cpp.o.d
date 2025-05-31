@@ -1417,7 +1417,6 @@ CMakeFiles/CovidProject.dir/src/addpatient.cpp.o: \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QApplication \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QDialog \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QGridLayout \
-  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLabel \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QLineEdit \
   /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtWidgets.framework/Headers/QPushButton \
@@ -1425,6 +1424,8 @@ CMakeFiles/CovidProject.dir/src/addpatient.cpp.o: \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/person.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/regex_validation.h \
   /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/data_types.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QString \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/patient.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -1445,4 +1446,7 @@ CMakeFiles/CovidProject.dir/src/addpatient.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDebug
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDebug \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QDir \
+  /Users/vojtadeconinck/Library/CloudStorage/OneDrive-VrijeUniversiteitBrussel/3\ Ba\ EIT/System\ Programming/FINAL_COVID_PROJECT/src/paths.h \
+  /Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64/lib/QtCore.framework/Headers/QCoreApplication

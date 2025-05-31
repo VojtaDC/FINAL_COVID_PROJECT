@@ -48,13 +48,16 @@ public:
         LoginScreen->setSizePolicy(sizePolicy);
         LoginScreen->setMinimumSize(QSize(350, 200));
         LoginScreen->setMaximumSize(QSize(350, 200));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Menlo"));
+        LoginScreen->setFont(font);
         labelTitle = new QLabel(LoginScreen);
         labelTitle->setObjectName(QString::fromUtf8("labelTitle"));
         labelTitle->setGeometry(QRect(140, 20, 55, 21));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Menlo"));
-        font.setPointSize(18);
-        labelTitle->setFont(font);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Menlo"));
+        font1.setPointSize(18);
+        labelTitle->setFont(font1);
         widget = new QWidget(LoginScreen);
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setGeometry(QRect(40, 70, 271, 97));
@@ -64,15 +67,13 @@ public:
         loginButton = new QPushButton(widget);
         loginButton->setObjectName(QString::fromUtf8("loginButton"));
         loginButton->setEnabled(true);
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Menlo"));
-        loginButton->setFont(font1);
+        loginButton->setFont(font);
 
         gridLayout_2->addWidget(loginButton, 1, 2, 1, 1);
 
         doctorButton = new QRadioButton(widget);
         doctorButton->setObjectName(QString::fromUtf8("doctorButton"));
-        doctorButton->setFont(font1);
+        doctorButton->setFont(font);
 
         gridLayout_2->addWidget(doctorButton, 1, 0, 1, 1);
 
@@ -80,27 +81,27 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_2 = new QLabel(widget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setFont(font1);
+        label_2->setFont(font);
         label_2->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_2, 1, 0, 1, 2);
 
         passwordEdit = new QLineEdit(widget);
         passwordEdit->setObjectName(QString::fromUtf8("passwordEdit"));
-        passwordEdit->setFont(font1);
+        passwordEdit->setFont(font);
         passwordEdit->setEchoMode(QLineEdit::PasswordEchoOnEdit);
 
         gridLayout->addWidget(passwordEdit, 1, 2, 1, 1);
 
         emailEdit = new QLineEdit(widget);
         emailEdit->setObjectName(QString::fromUtf8("emailEdit"));
-        emailEdit->setFont(font1);
+        emailEdit->setFont(font);
 
         gridLayout->addWidget(emailEdit, 0, 2, 1, 1);
 
         label = new QLabel(widget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setFont(font1);
+        label->setFont(font);
         label->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label, 0, 0, 1, 2);
@@ -110,7 +111,7 @@ public:
 
         patientButton = new QRadioButton(widget);
         patientButton->setObjectName(QString::fromUtf8("patientButton"));
-        patientButton->setFont(font1);
+        patientButton->setFont(font);
 
         gridLayout_2->addWidget(patientButton, 1, 1, 1, 1);
 

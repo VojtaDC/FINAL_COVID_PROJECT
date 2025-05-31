@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_AddPatient_t {
-    QByteArrayData data[3];
-    char stringdata0[33];
+    QByteArrayData data[6];
+    char stringdata0[68];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,11 +32,15 @@ struct qt_meta_stringdata_AddPatient_t {
 static const qt_meta_stringdata_AddPatient_t qt_meta_stringdata_AddPatient = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "AddPatient"
-QT_MOC_LITERAL(1, 11, 20), // "on_addButton_clicked"
-QT_MOC_LITERAL(2, 32, 0) // ""
+QT_MOC_LITERAL(1, 11, 12), // "patientAdded"
+QT_MOC_LITERAL(2, 24, 0), // ""
+QT_MOC_LITERAL(3, 25, 8), // "Patient*"
+QT_MOC_LITERAL(4, 34, 12), // "_new_patient"
+QT_MOC_LITERAL(5, 47, 20) // "on_addButton_clicked"
 
     },
-    "AddPatient\0on_addButton_clicked\0"
+    "AddPatient\0patientAdded\0\0Patient*\0"
+    "_new_patient\0on_addButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -46,15 +50,21 @@ static const uint qt_meta_data_AddPatient[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    1,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   19,    2, 0x08 /* Private */,
+       5,    0,   27,    2, 0x08 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
 
  // slots: parameters
     QMetaType::Void,
@@ -68,11 +78,20 @@ void AddPatient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         AddPatient *_t = static_cast<AddPatient *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_addButton_clicked(); break;
+        case 0: _t->patientAdded((*reinterpret_cast< Patient*(*)>(_a[1]))); break;
+        case 1: _t->on_addButton_clicked(); break;
         default: ;
         }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (AddPatient::*)(Patient * );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&AddPatient::patientAdded)) {
+                *result = 0;
+                return;
+            }
+        }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject AddPatient::staticMetaObject = { {
@@ -104,15 +123,22 @@ int AddPatient::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
+}
+
+// SIGNAL 0
+void AddPatient::patientAdded(Patient * _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

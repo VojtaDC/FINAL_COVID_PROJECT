@@ -29,11 +29,11 @@ public:
     QGridLayout *gridLayout_2;
     QSpacerItem *verticalSpacer_2;
     QGridLayout *gridLayout;
+    QSpacerItem *verticalSpacer_3;
     QPushButton *signoffButton;
     QPushButton *resultsButton;
-    QPushButton *accountButton;
     QLabel *labelTitle;
-    QSpacerItem *verticalSpacer_3;
+    QPushButton *accountButton;
     QSpacerItem *horizontalSpacer;
     QSpacerItem *verticalSpacer;
     QSpacerItem *horizontalSpacer_2;
@@ -44,8 +44,11 @@ public:
     {
         if (PatientMenu->objectName().isEmpty())
             PatientMenu->setObjectName(QString::fromUtf8("PatientMenu"));
-        PatientMenu->resize(600, 400);
+        PatientMenu->resize(800, 600);
         PatientMenu->setMaximumSize(QSize(800, 600));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Menlo"));
+        PatientMenu->setFont(font);
         centralwidget = new QWidget(PatientMenu);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
@@ -56,25 +59,21 @@ public:
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer_3, 1, 0, 1, 1);
+
         signoffButton = new QPushButton(centralwidget);
         signoffButton->setObjectName(QString::fromUtf8("signoffButton"));
-        QFont font;
-        font.setFamily(QString::fromUtf8("Menlo"));
         signoffButton->setFont(font);
 
-        gridLayout->addWidget(signoffButton, 4, 0, 1, 1);
+        gridLayout->addWidget(signoffButton, 5, 0, 1, 1);
 
         resultsButton = new QPushButton(centralwidget);
         resultsButton->setObjectName(QString::fromUtf8("resultsButton"));
         resultsButton->setFont(font);
 
         gridLayout->addWidget(resultsButton, 3, 0, 1, 1);
-
-        accountButton = new QPushButton(centralwidget);
-        accountButton->setObjectName(QString::fromUtf8("accountButton"));
-        accountButton->setFont(font);
-
-        gridLayout->addWidget(accountButton, 2, 0, 1, 1);
 
         labelTitle = new QLabel(centralwidget);
         labelTitle->setObjectName(QString::fromUtf8("labelTitle"));
@@ -87,9 +86,11 @@ public:
 
         gridLayout->addWidget(labelTitle, 0, 0, 1, 1);
 
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+        accountButton = new QPushButton(centralwidget);
+        accountButton->setObjectName(QString::fromUtf8("accountButton"));
+        accountButton->setFont(font);
 
-        gridLayout->addItem(verticalSpacer_3, 1, 0, 1, 1);
+        gridLayout->addWidget(accountButton, 4, 0, 1, 1);
 
         gridLayout->setRowStretch(0, 1);
 
@@ -110,7 +111,7 @@ public:
         PatientMenu->setCentralWidget(centralwidget);
         menubar = new QMenuBar(PatientMenu);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 600, 24));
+        menubar->setGeometry(QRect(0, 0, 800, 24));
         PatientMenu->setMenuBar(menubar);
         statusbar = new QStatusBar(PatientMenu);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -126,8 +127,8 @@ public:
         PatientMenu->setWindowTitle(QApplication::translate("PatientMenu", "MainWindow", nullptr));
         signoffButton->setText(QApplication::translate("PatientMenu", "Sign off", nullptr));
         resultsButton->setText(QApplication::translate("PatientMenu", "View results", nullptr));
-        accountButton->setText(QApplication::translate("PatientMenu", "My account", nullptr));
         labelTitle->setText(QApplication::translate("PatientMenu", "Main menu", nullptr));
+        accountButton->setText(QApplication::translate("PatientMenu", "My account", nullptr));
     } // retranslateUi
 
 };
