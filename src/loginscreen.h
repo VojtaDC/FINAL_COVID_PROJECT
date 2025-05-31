@@ -4,9 +4,11 @@
 #include <QMessageBox>
 #include "ui_loginscreen.h"
 #include "person.h"
-#include "doctor.h"
-#include "patient.h"
 #include "csvloader.h"
+#include "patient.h"
+#include "doctor.h"
+#include "sessionutils.h"
+#include "paths.h"
 
 class LoginScreen : public QDialog
 {
@@ -20,6 +22,6 @@ private slots:
 	void on_loginButton_clicked();
 private:
 	Ui::LoginScreen ui;
-	std::vector<std::unique_ptr<Patient>> patients;
-	std::vector<std::unique_ptr<Doctor>> doctors;
+	std::vector<std::unique_ptr<Patient>> m_patients;
+	std::vector<std::unique_ptr<Doctor>> m_doctors;
 };
