@@ -25,12 +25,12 @@ void AddPatient::on_addButton_clicked() {
 		QMessageBox::warning(this, "Error", "Please fill in all the boxes");
 		return;
 	}
-	else if (!(RegexValidation::IsValidated(ValType::EMail, email.toStdString()))) {
+	else if (!(RegexValidation::IsValidated(ValType::EMail, email))) {
 		QMessageBox::warning(this, "Error", "Not a valid e-mail address");
 		return;
 	}
-	else if (!(RegexValidation::IsValidated(ValType::GSM, phone.toStdString())) && 
-			 !(RegexValidation::IsValidated(ValType::Phone, phone.toStdString()))) {
+	else if (!(RegexValidation::IsValidated(ValType::GSM, phone)) && 
+			 !(RegexValidation::IsValidated(ValType::Phone, phone))) {
 		QMessageBox::warning(this, "Error", "Not a valid phone number");
 		return;
 	}
@@ -43,13 +43,13 @@ void AddPatient::on_addButton_clicked() {
 		QMessageBox::warning(this, "Error", "Please fill in all the boxes");
 		return;
 	}
-	else if (!(RegexValidation::IsValidated(ValType::EMail, email.toStdString()))) {
+	else if (!(RegexValidation::IsValidated(ValType::EMail, email))) {
 		QMessageBox::warning(this, "Error", "Not a valable e-mail adres");
 		return;
 		
 	}
 
-	else if (!(RegexValidation::IsValidated(ValType::GSM, phone.toStdString())) && !(RegexValidation::IsValidated(ValType::Phone, phone.toStdString()))) {
+	else if (!(RegexValidation::IsValidated(ValType::GSM, phone)) && !(RegexValidation::IsValidated(ValType::Phone, phone))) {
 		QMessageBox::warning(this, "Error", "Not a valable phone number");
 		return;
 

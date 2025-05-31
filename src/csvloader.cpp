@@ -8,6 +8,7 @@
 #include <functional>
 
 
+
 // New type-based implementation
 std::vector<std::unique_ptr<Person>> CsvLoader::LoadAllPersons(const std::string& _filepath) {
     std::vector<std::unique_ptr<Person>> persons;
@@ -32,6 +33,7 @@ std::vector<std::unique_ptr<Person>> CsvLoader::LoadAllPersons(const std::string
         
         if (auto person = CreatePersonFromData(fields)) {
             persons.push_back(std::move(person));
+            
         }
     }
     
@@ -104,7 +106,7 @@ std::vector<std::unique_ptr<Patient>> CsvLoader::FilterPatients(const std::vecto
     return patients;
 }
 
-void CsvLoader::SavePatients(const std::vector<std::unique_ptr<Person>>& _patients, const std::string&& _filepath) {
+void CsvLoader::SavePatients(const std::vector<std::unique_ptr<Person>>& _patients, const std::string& _filepath) {
     std::ofstream m_fileStream;
     m_fileStream.open(_filepath);
     if (m_fileStream.is_open())
