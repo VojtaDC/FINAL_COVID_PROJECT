@@ -1,4 +1,4 @@
-#include "patientfiltermodel.h"
+#include "patient_filter_model.h"
 
 PatientFilterModel::PatientFilterModel(QObject* parent) : QSortFilterProxyModel(parent) {
 }
@@ -16,6 +16,7 @@ void PatientFilterModel::setOption(const QString& _option) {
 bool PatientFilterModel::filterAcceptsRow(int _sourcerow, const QModelIndex& _sourceparent) const { //method from QSortFilterProxyModel that we override to make the custom filter. Returns true if the row matches the filter and thus should be displayed
 	QModelIndex fullname_index = sourceModel()->index(_sourcerow, 0, _sourceparent); //QSortFilterProxyModel operates on a source model (m_model) and this model has rows and columns which contain data. This gives the index where the data to be checked is located
 	QModelIndex option_index = sourceModel()->index(_sourcerow, 1, _sourceparent);
+
 	QString fullname = sourceModel()->data(fullname_index).toString(); //This gives the data, from the source model, which needs to be check
 	QString option = sourceModel()->data(option_index).toString();
 

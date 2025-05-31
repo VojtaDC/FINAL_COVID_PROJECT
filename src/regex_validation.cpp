@@ -39,4 +39,4 @@ bool RegexValidation::IsValidated(ValType _type, const QString& _string) {
 	QRegularExpression regex_validation(pattern);
 	QRegularExpressionMatch match = regex_validation.match(_string);
 	return match.hasMatch();
-} 
+}
