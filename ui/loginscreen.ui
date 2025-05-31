@@ -28,6 +28,11 @@
     <height>200</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>Menlo</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Login</string>
   </property>

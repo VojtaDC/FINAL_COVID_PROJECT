@@ -36,6 +36,15 @@ set(CMAKE_PREFIX_PATH "/Users/vojtadeconinck/MyQtApp/Qt5.12.0/5.12.0/clang_64")
 # Find Qt5 components
 find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets)
 
+# Find OpenCV - adjust path as needed
+set(OpenCV_DIR "/usr/local/Cellar/opencv/4.11.0_1/lib/cmake/opencv4")
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+set(THIRDPARTY_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/includes")
+include_directories(${THIRDPARTY_INCLUDE_DIR})
+
+
 # Source files
 set(SOURCES
     src/main.cpp
@@ -53,6 +62,7 @@ set(SOURCES
     src/patientfiltermodel.cpp
     src/patientdetails.cpp
     src/sessionutils.cpp
+    src/covidtest.cpp
 )
 
 # Header files
@@ -72,6 +82,7 @@ set(HEADERS
     src/patientfiltermodel.h
     src/patientdetails.h
     src/sessionutils.h
+    src/covidtest.h
 )
 
 # UI files
@@ -84,6 +95,7 @@ set(UI_FILES
     ui/patientmenu.ui
     ui/patientdetails.ui
     ui/patientaccount.ui
+    ui/covidtest.ui
 )
 
 # Resource files
@@ -116,11 +128,12 @@ if(APPLE)
     )
 endif()
 
-# Link Qt libraries
+# Link Qt libraries and other dependencies
 target_link_libraries(CovidProject PRIVATE
     Qt5::Core
     Qt5::Widgets
     Qt5::Gui
+    ${OpenCV_LIBS}
 )
 
 # Compile options

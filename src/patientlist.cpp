@@ -21,12 +21,8 @@ PatientList::PatientList(QWidget *parent) : QMainWindow(parent), m_table_model(n
     QString personsFile = getPersonsFilePath();    // Laad alle personen uit één bestand met de nieuwe type-gebaseerde methode
     m_all_persons = CsvLoader::LoadAllPersons(personsFile.toStdString());
 	
-	for (const auto& person : m_all_persons) {
-		if (dynamic_cast<Patient*>(person.get())) {
-			// Move the Patient from allPersons to patients vector
-			m_patients.push_back(std::move(const_cast<std::unique_ptr<Person>&>(person)));
-		}
-	}
+    // Use the filter method from CsvLoader instead of manual filtering
+    auto filtered_patients = CsvLoader::FilterPatients(m_all_persons);
 	
 	// Initialize table model and filter
 	m_table_model = new QStandardItemModel(this);
