@@ -14,5 +14,5 @@ inline QString getModelFilePath() {
     QDir exeDir(QCoreApplication::applicationDirPath());
     exeDir.cdUp();
     exeDir.cd("data");
-    return exeDir.filePath("epoch_30.json");
+    return exeDir.filePath("epoch_30_vojta.json");
 }
