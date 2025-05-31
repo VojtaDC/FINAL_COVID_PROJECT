@@ -1,7 +1,8 @@
 #pragma once
 #include "data_types.h"
+#include <QString>
 
 class RegexValidation {
 public:
-	static bool IsValidated(ValType _type, const std::string& _string);
+	static bool IsValidated(ValType _type, const QString& _string);
 };
