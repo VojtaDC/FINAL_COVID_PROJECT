@@ -16,17 +16,3 @@ inline QString getModelFilePath() {
     exeDir.cd("data");
     return exeDir.filePath("epoch_30.json");
 }
-
-inline QString getDoctorFilePath() {
-    QDir exeDir(QCoreApplication::applicationDirPath());
-    exeDir.cdUp();
-    exeDir.cd("data");
-    return exeDir.filePath("doctor.csv");
-}
-
-inline QString getPatientFilePath() {
-    QDir exeDir(QCoreApplication::applicationDirPath());
-    exeDir.cdUp();
-    exeDir.cd("data");
-    return exeDir.filePath("patient.csv");
-}
