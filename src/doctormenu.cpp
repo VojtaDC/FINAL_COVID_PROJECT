@@ -2,7 +2,7 @@
 #include "addpatient.h"
 #include "patientlist.h"
 #include "sessionutils.h"
-#include "covidtest.h"
+#include "covidanalyzer.h"
 #include <QDebug>
 
 DoctorMenu::DoctorMenu(QWidget *parent) : QMainWindow(parent) {
@@ -27,11 +27,11 @@ void DoctorMenu::on_patientlistButton_clicked() {
 
 void DoctorMenu::on_covidtestButton_clicked() {
 	qDebug() << "Covid test button clicked!";
-	CovidTest* covidTest = new CovidTest();
-	covidTest->setAttribute(Qt::WA_DeleteOnClose); // Ensure proper cleanup
-	covidTest->setWindowModality(Qt::ApplicationModal); // Make it modal
-	covidTest->show();
-	qDebug() << "CovidTest window created and shown";
+	CovidAnalyzer* covidAnalyzer = new CovidAnalyzer();
+	covidAnalyzer->setAttribute(Qt::WA_DeleteOnClose); // Ensure proper cleanup
+	covidAnalyzer->setWindowModality(Qt::ApplicationModal); // Make it modal
+	covidAnalyzer->show();
+	qDebug() << "CovidAnalyzer window created and shown";
 }
 
 void DoctorMenu::on_signoffButton_clicked() {
